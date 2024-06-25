@@ -44,7 +44,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
+  title: 'Waqas Kaleem',
   description: "Example site built with Tim Baker's react resume template",
 };
 
@@ -69,24 +69,19 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Waqas Kaleem.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I'm a Lahore based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">i2c</strong> helping in building a modern, web based, financial
+        architecture for payment processing.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/assets/Waqas Kaleem CV.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +99,17 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `A knowledgeable, enthusiastic computer science expert with leadership skills, having a strong foundation 
+in problem-solving. Passionate about Artificial intelligence and data science. Versatile, open to change, 
+and driven by a continuous learning mindset. Possess a strong grasp on past experiences, capable of 
+learning from mistakes, and applying acquired insights to future endeavors.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Lhore, Pakistan', Icon: MapIcon},
+    {label: 'Age', text: '25', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Pakistani', Icon: FlagIcon},
+    {label: 'Interests', text: 'Gamming, Movies', Icon: SparklesIcon},
+    {label: 'Study', text: 'NUCES, Lahore', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'i2c, inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -126,15 +122,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'English',
+        level: 9,
+      },
+      {
+        name: 'Urdu',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
+        name: 'Hindi',
+        level: 7,
       },
     ],
   },
@@ -336,26 +332,26 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'In case of any quires contact me.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'waqaswork@gmail.com',
+      href: 'mailto:waqaswork@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Lahore, Pakistan',
+      href: 'https://www.google.com/maps/@31.5241552,74.3000764,13z?entry=ttu',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
+      text: '@waqas',
       href: 'https://www.instagram.com/tbakerx/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
+      text: 'waqas',
       href: 'https://github.com/tbakerx',
     },
   ],
