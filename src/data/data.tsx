@@ -104,7 +104,7 @@ in problem-solving. Passionate about Artificial intelligence and data science. V
 and driven by a continuous learning mindset. Possess a strong grasp on past experiences, capable of 
 learning from mistakes, and applying acquired insights to future endeavors.`,
   aboutItems: [
-    {label: 'Location', text: 'Lhore, Pakistan', Icon: MapIcon},
+    {label: 'Location', text: 'Lahore, Pakistan', Icon: MapIcon},
     {label: 'Age', text: '25', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Pakistani', Icon: FlagIcon},
     {label: 'Interests', text: 'Gamming, Movies', Icon: SparklesIcon},
@@ -156,15 +156,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
+        level: 9,
+      },
+      {
+        name: 'Python',
+        level: 7,
+      },
+      {
+        name: 'Java',
         level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
       },
     ],
   },
@@ -176,8 +176,8 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Kotlin',
+        level: 5,
       },
       {
         name: 'Swift',
@@ -192,27 +192,27 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Next Js Bundle Analysis',
+    description: 'Analyzes each PR\'s impact on your next.js app\'s bundle size and displays it using a comment. Optionally supports performance budgets.',
+    url: 'https://github.com/waqaskaleem007/Next.js-Project-Bundle-Analysis',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'My Shop Ecommerce Website',
+    description: 'MyShop is an Ecommerce web application built with Next.js and MongoDB.',
+    url: 'https://my-shop-ecommerce-website-gfpenuezh-pawanpk87.vercel.app/',
     image: porfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://fix-my-phone-ujjalzaman.vercel.app/',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Next.js Project with Node.js and Express Backend ',
+    description: 'Welcome to our Next.js project with a Node.js and Express backend! This project aims to provide a comprehensive solution for managing mobile device repairs. Users can register, request services, track their repairs, make payments, and more. Admins have tools to efficiently manage service requests, appointments, technicians, inventory, and customer accounts. ',
+    url: 'https://fix-my-phone-ujjalzaman.vercel.app/',
     image: porfolioImage4,
   },
   {
@@ -264,39 +264,37 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'July 2021',
+    location: 'NUCES',
+    title: 'Bachelor in Computer Science',
+    content: <p>Driven by a passion for understanding how computer applications function, I transferred to the National University of Computer and Emerging Sciences. There, I pursued a Bachelor's degree in Computer Science with a specialization in Software Engineering. This provided me with a deeper education in the fundamental theories, concepts, and science behind advanced programming. It was at this institution that I discovered my enthusiasm for scalable application development (both web and mobile), the security aspects of computer and application systems, and realized my aptitude for comprehending complex algorithms.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'March 2017',
+    location: 'Government College University Lahore',
+    title: 'Pre-Engineering in Computer Sciences',
+    content: <p>I completed my Pre-Engineering in Computer Sciences at Government College Lahore, where I engaged in an intensive program that laid a solid foundation in programming, algorithms, and data structures. This education provided me with strong analytical and problem-solving skills, developed through rigorous coursework and hands-on projects. My time at Government College Lahore was instrumental in shaping my passion for technology and engineering, preparing me for further studies and a career in the field.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'July 2021 - Present',
+    location: 'i2c, Inc.',
+    title: 'Full Stack Software Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Led the creation of a robust Fraud Engine using advanced feature engineering to detect and prevent fraudulent banking transactions. Overhauled the Stats service to efficiently process and analyze Big Data with a distributed Spark architecture. Implemented a Python-based model monitoring service for real-time analysis, detecting data drift and maintaining machine learning model integrity. Optimized the system to handle 3 million transactions using multiprocessing techniques. In addition, developed and maintained RESTful APIs using Spring Boot to support a scalable and high-performance backend architecture. These APIs facilitated seamless communication between various services and ensured efficient data handling and processing. Implemented best practices in web development to enhance the user interface and experience, ensuring seamless interaction with the fraud detection and data monitoring systems. The combination of Spring Boot and RESTful APIs enabled the system to handle complex operations and large datasets with ease, contributing to the overall robustness and scalability of the application.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'June 2020 - July 2021',
+    location: 'Xavor Corporation',
+    title: 'ML Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Spearheaded the creation of an advanced product centered on Multimodal Human Activity Detection. This groundbreaking project combined grid eye and sound sensors to gather extensive data for precise human activity identification. Contributed significantly to the development of a mobile application for both Android and iOS, providing real-time insights into detected activities through an intuitive interface. This project was a major success, receiving positive feedback from users and stakeholders alike.
       </p>
     ),
   },
@@ -309,18 +307,18 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Asif Raza',
+      text: 'Using the Next Js Bundle Analysis tool has significantly streamlined our development process. Each pull request\'s impact on bundle size is clearly displayed, allowing us to maintain optimal performance standards effortlessly. The optional performance budget feature is a game-changer for our team. Highly recommended for any Next.js projects!',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Pawan Kumar',
+      text: 'My Shop is an outstanding ecommerce platform built with Next.js and MongoDB. The seamless integration and user-friendly interface have transformed our online shopping experience. Its robust performance and scalability have exceeded our expectations, making it the perfect solution for our business needs.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Kartik',
+      text: 'This comprehensive Next.js project with a Node.js and Express backend has revolutionized our mobile device repair management. From user registration to service requests and payment tracking, it covers all aspects efficiently. The admin tools are particularly impressive, allowing for streamlined management of service requests, appointments, technicians, inventory, and customer accounts.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -336,8 +334,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'waqaswork@gmail.com',
-      href: 'mailto:waqaswork@gmail.com',
+      text: 'waqaswork2932@gmail.com',
+      href: 'mailto:waqaswork2932@gmail.com',
     },
     {
       type: ContactType.Location,
@@ -347,12 +345,12 @@ export const contact: ContactSection = {
     {
       type: ContactType.Instagram,
       text: '@waqas',
-      href: 'https://www.instagram.com/tbakerx/',
+      href: 'https://www.instagram.com/',
     },
     {
       type: ContactType.Github,
       text: 'waqas',
-      href: 'https://github.com/tbakerx',
+      href: 'https://github.com/waqaskaleem007',
     },
   ],
 };
@@ -361,9 +359,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/waqaskaleem007'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/26536800/waqas-kaleem'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com'},
 ];
