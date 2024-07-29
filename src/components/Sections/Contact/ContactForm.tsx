@@ -1,3 +1,4 @@
+import emailjs from 'emailjs-com';
 import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
@@ -9,9 +10,9 @@ interface FormData {
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
-      name: '',
-      email: '',
-      message: '',
+      name: 'wiki',
+      email: 'w@gmail.com',
+      message: 'test',
     }),
     [],
   );
@@ -32,9 +33,23 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
+      
+      console.log('Data to send: ', data);
+
+      emailjs.send(
+        'YOUR_SERVICE_ID',  // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        data as unknown as Record<string, unknown>,
+        'YOUR_USER_ID'      // Replace with your EmailJS user ID
+      )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Message sent successfully!');
+      })
+      .catch((err) => {
+        console.error('FAILED...', err);
+        alert('Failed to send the message. Please try again later.');
+      });
       console.log('Data to send: ', data);
     },
     [data],
