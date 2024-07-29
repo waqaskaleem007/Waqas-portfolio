@@ -37,10 +37,10 @@ const ContactForm: FC = memo(() => {
       console.log('Data to send: ', data);
 
       emailjs.send(
-        'YOUR_SERVICE_ID',  // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_4o9dphe',  // Replace with your EmailJS service ID
+        'template_u835whk', // Replace with your EmailJS template ID
         data as unknown as Record<string, unknown>,
-        'YOUR_USER_ID'      // Replace with your EmailJS user ID
+        'thHbgF4RAXeUQfeuL'      // Replace with your EmailJS user ID
       )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
