@@ -2,7 +2,8 @@ import emailjs from 'emailjs-com';
 import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
-  name: string;
+  to_name: string;
+  from_name: string;
   email: string;
   message: string;
 }
@@ -10,7 +11,8 @@ interface FormData {
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
-      name: 'wiki',
+      to_name: 'Waqas',
+      from_name: '', 
       email: 'w@gmail.com',
       message: 'test',
     }),
@@ -33,13 +35,18 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
+      const emailData = {
+        to_name: 'Waqas',
+        from_name: data.from_name,
+        email: data.email,
+        message: data.message,
+      };
+      console.log('Data to send: ', emailData);
       
-      console.log('Data to send: ', data);
-
       emailjs.send(
         'service_4o9dphe',  // Replace with your EmailJS service ID
-        'template_u835whk', // Replace with your EmailJS template ID
-        data as unknown as Record<string, unknown>,
+        'template_k3dvt32', // Replace with your EmailJS template ID
+        emailData as unknown as Record<string, unknown>,
         'thHbgF4RAXeUQfeuL'      // Replace with your EmailJS user ID
       )
       .then((response) => {
@@ -60,7 +67,7 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
+      <input className={inputClasses} name="from_name" onChange={onChange} placeholder="Name" required type="text" />
       <input
         autoComplete="email"
         className={inputClasses}
